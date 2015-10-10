@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.doukit</groupId>
-    <artifactId>doukit-com</artifactId>
+    <artifactId>doukit-web</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <name>doukit-com</name>
+    <name>doukit-web</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>doukit-com</finalName>
+        <finalName>${artifactId}</finalName>
 
         <plugins>
             <plugin>
