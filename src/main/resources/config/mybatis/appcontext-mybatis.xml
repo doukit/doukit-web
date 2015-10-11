@@ -17,10 +17,10 @@
 
     <!--数据库链接配置-->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	<property name="url" value="${url}"/>
-	<property name="username" value="${username}" />
-	<property name="password" value="${pwd}"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}" />
+        <property name="password" value="${pwd}"/>
         <property name="initialSize" value="2" />
         <property name="maxActive" value="30" />
         <property name="maxIdle" value="10" />
@@ -43,11 +43,6 @@
 
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
-    </bean>
-
-    <!-- mapper definition -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.popkit.appkit.demo.mapper" />
     </bean>
 
 </beans>

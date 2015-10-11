@@ -8,8 +8,9 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath*:config/spring/doukit-servlet.xml,
-            classpath*:config/mybatis/appcontext-mybatis.xml
+            classpath:config/spring/doukit-servlet.xml,
+            classpath:config/mybatis/appcontext-mybatis.xml
+            classpath:config/mybatis/appcontext-mapper.xml
         </param-value>
     </context-param>
 

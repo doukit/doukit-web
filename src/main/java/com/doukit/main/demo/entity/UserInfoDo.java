@@ -24,6 +24,15 @@ public class UserInfoDo implements Serializable {
         this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "UserInfoDo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
