@@ -1,5 +1,5 @@
 # doukit-web
-[![Build Status](https://travis-ci.org/doukit/doukit-web.svg)](https://travis-ci.org/doukit/doukit-web)
+[![Build Status](https://travis-ci.org/doukit/doukit-web.svg)](https://travis-ci.org/doukit/doukit-web)  
 [doukit.com](http://www.doukit.com)站的web代码
 
 # 架构
