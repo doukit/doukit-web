@@ -15,10 +15,10 @@
 
     <context:component-scan base-package="com.doukit"/>
 
-    <!-- middleware datasource  -->
+    <!--数据库链接配置-->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	<property name="url" value="${dburl}"/>
+	<property name="url" value="${url}"/>
 	<property name="username" value="${username}" />
 	<property name="password" value="${pwd}"/>
         <property name="initialSize" value="2" />
@@ -31,7 +31,6 @@
         <property name="validationQuery" value="SELECT 1" />
     </bean>
 
-    <!-- config mysql statements -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource" />
