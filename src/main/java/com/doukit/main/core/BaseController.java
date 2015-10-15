@@ -1,6 +1,7 @@
 package com.doukit.main.core;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Aborn Jiang
@@ -10,4 +11,9 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class BaseController {
+
+    @RequestMapping(value = "index.html")
+    public String index() {
+        return "redirect:/index/index.html";
+    }
 }

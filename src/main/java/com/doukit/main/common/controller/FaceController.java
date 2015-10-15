@@ -1,5 +1,6 @@
 package com.doukit.main.common.controller;
 
+import com.doukit.main.core.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping(value = "/common")
-public class FaceController {
+public class FaceController extends BaseController {
 
     @RequestMapping(value = "/face.html")
     public String faceNotice() {

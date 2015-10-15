@@ -17,11 +17,23 @@ public class FaceInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String uri = request.getRequestURI();
-        if (StringUtils.isNotBlank(uri) && uri.startsWith("/common")) {
+        if (isLegal(uri)) {
             return true;
         }
 
-        response.sendRedirect("/common/face.html");
+        response.sendRedirect("/index/index.html");
+        return false;
+    }
+
+    public boolean isLegal(String uri) {
+        if (StringUtils.isBlank(uri)) {
+            return false;
+        }
+
+        if (uri.startsWith("/common") | uri.equals("index.html") | uri.startsWith("/index")) {
+            return true;
+        }
+
         return false;
     }
 }
