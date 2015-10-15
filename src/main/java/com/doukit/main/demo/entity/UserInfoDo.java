@@ -3,7 +3,7 @@ package com.doukit.main.demo.entity;
 import java.io.Serializable;
 
 /**
- * Author: aborn.jiang
+ * Author: Aborn Jiang
  * Email : aborn.jiang AT foxmail.com
  * Date  : 4/8/15
  * Time  : 11:52 PM

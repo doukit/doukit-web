@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * Like ibatis's DAO
- * @author guobao.jiang
+ * @author Aborn Jiang
  * @date 3/15/15
  * @time 4:00 PM
  */
