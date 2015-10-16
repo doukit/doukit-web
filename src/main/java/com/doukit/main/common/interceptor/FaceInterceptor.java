@@ -30,7 +30,8 @@ public class FaceInterceptor extends HandlerInterceptorAdapter {
             return false;
         }
 
-        if (uri.startsWith("/common") | uri.equals("index.html") | uri.startsWith("/index")) {
+        if (uri.startsWith("/common") || uri.equals("index.html")
+                || uri.startsWith("/index") || uri.startsWith("/mobile")) {
             return true;
         }
 

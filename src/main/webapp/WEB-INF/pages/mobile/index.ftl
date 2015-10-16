@@ -30,12 +30,10 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="/amazeui/2.4.2/assets/i/app-icon72x72@2x.png">
     <meta name="msapplication-TileColor" content="#0e90d2">
-
-    <link rel="stylesheet" href="/amazeui/2.4.2/assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="/amazeui/2.4.2/assets/css/app.css">
+<#include "/common/commoncss.ftl" />
 </head>
-<body>
 
+<body>
 <header data-am-widget="header"
         class="am-header am-header-default">
     <div class="am-header-left am-header-nav">
@@ -47,7 +45,7 @@
 
     <h1 class="am-header-title">
         <a href="#title-link" class="">
-            Amaze UI
+            移动doukit
         </a>
     </h1>
 
